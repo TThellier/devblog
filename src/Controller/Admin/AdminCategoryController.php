@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class AdminDashboardController extends AbstractController
+class AdminCategoryController extends AbstractController
 {
-    #[Route('/admin', name: 'admin_dashboard')]
+    #[Route('/admin/category', name: 'admin_category')]
     public function index(): Response
     {
-        return $this->render('admin/dashboard/index.html.twig', [
-            'current_menu' => 'dashboard',
+        return $this->render('admin/category/index.html.twig', [
+            'current_menu' => 'category',
         ]);
     }
 }
