@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une catégorie{% endblock %}
+
+{% block body %}
+<form action="" method="post">
+    <div class="mb-3">
+        <label for="title" class="form-label">Titre de catégorie</label>
+        <input type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="illustration" class="form-label">Illustration</label>
+        <input class="form-control" id="illustration"></input>
+    </div>
+    <button type="submit">Envoyer</button>
+</form>
+{% endblock %}
